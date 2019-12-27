@@ -1,13 +1,9 @@
 import sys
 import time
 while True:
-    print('Is it raining?')
-    answer1 = input()
-    if answer1.upper() == 'NO':
-        break
-    if answer1.upper() =='YES':
-        break
-    if answer1.upper() != 'YES' or answer1.upper() != 'NO':
+    answer1 = input('Is it raining?').upper()
+        if answer1 in ('YES', 'NO'):
+            break
         print('Please answer with Yes or No !')
         continue
 if answer1.upper() =='NO':
